@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -155,7 +156,6 @@
       </a>
 
       <div id="product-content" class="detail-card mt-3" hidden>
-
         <div class="row align-items-center gy-4">
 
           <div class="col-lg-5">
@@ -163,7 +163,6 @@
           </div>
 
           <div class="col-lg-7">
-
             <span id="product-category" class="category-label"></span>
 
             <h1 id="product-name" class="product-title"></h1>
@@ -188,7 +187,6 @@
               <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>
               Tanyakan Produk
             </a>
-
           </div>
         </div>
       </div>
@@ -391,7 +389,6 @@
     const product = products[productKey];
 
     if (product) {
-
       document.getElementById("product-content").hidden = false;
 
       document.getElementById("product-name").textContent = product.name;
@@ -418,9 +415,7 @@
       document.title = product.name + " | AMCOZIP";
 
     } else {
-
       document.getElementById("not-found").hidden = false;
-
     }
   </script>
 
