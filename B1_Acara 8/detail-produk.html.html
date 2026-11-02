@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk | AMCOZIP</title>
+  <meta name="description" content="Informasi produk ritsleting dan aksesori garmen PT Fajarindo Faliman Zipper (AMCOZIP).">
+
+  <link href="assets/img/favicon.png" rel="icon" type="image/png">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    .detail-navbar {
+      background: #173b63;
+      padding: 14px 0;
+    }
+
+    .detail-navbar .brand {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .detail-section {
+      min-height: 75vh;
+      padding: 48px 0;
+    }
+
+    .detail-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: 0 5px 25px rgba(0,0,0,.07);
+    }
+
+    .product-image {
+      width: 100%;
+      max-height: 390px;
+      object-fit: contain;
+      border-radius: 14px;
+      background: #f8f9fa;
+      padding: 15px;
+    }
+
+    .category-label {
+      display: inline-block;
+      background: #eaf2fb;
+      color: #1763a6;
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .product-title {
+      color: #173b63;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .product-description {
+      color: #666;
+      line-height: 1.8;
+    }
+
+    .info-box {
+      background: #f5f8fc;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 22px;
+    }
+
+    .info-box li {
+      margin-bottom: 9px;
+      color: #555;
+    }
+
+    .btn-back, .btn-wa {
+      display: inline-block;
+      border-radius: 30px;
+      padding: 11px 22px;
+      text-decoration: none;
+    }
+
+    .btn-back {
+      background: #173b63;
+      color: #fff;
+    }
+
+    .btn-back:hover {
+      background: #245783;
+      color: #fff;
+    }
+
+    .btn-wa {
+      background: #198754;
+      color: #fff;
+    }
+
+    .btn-wa:hover {
+      background: #146c43;
+      color: #fff;
+    }
+
+    .detail-footer {
+      background: #173b63;
+      color: #fff;
+      padding: 22px;
+      text-align: center;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .detail-card {
+        padding: 20px;
+      }
+
+      .detail-section {
+        padding: 30px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <nav class="detail-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand">AMCOZIP</a>
+      <span class="text-white small">PT Fajarindo Faliman Zipper</span>
+    </div>
+  </nav>
+
+  <!-- Detail Produk -->
+  <main class="detail-section">
+    <div class="container">
+
+      <a href="index.html#products" class="btn-back mb-4">
+        <i class="bi bi-arrow-left me-2" aria-hidden="true"></i>
+        Kembali ke Katalog
+      </a>
+
+      <div id="product-content" class="detail-card mt-3" hidden>
+
+        <div class="row align-items-center gy-4">
+
+          <div class="col-lg-5">
+            <img id="product-image" class="product-image" src="" alt="">
+          </div>
+
+          <div class="col-lg-7">
+
+            <span id="product-category" class="category-label"></span>
+
+            <h1 id="product-name" class="product-title"></h1>
+
+            <p id="product-description" class="product-description"></p>
+
+            <div class="info-box">
+              <h5 class="fw-bold mb-3">Informasi Produk</h5>
+              <ul id="product-facts" class="mb-0"></ul>
+            </div>
+
+            <p class="text-muted small mt-3">
+              Untuk memastikan ketersediaan, pilihan, dan spesifikasi lebih lanjut,
+              silakan hubungi tim penjualan AMCOZIP.
+            </p>
+
+            <a id="whatsapp-link"
+               href="#"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-wa mt-2">
+              <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>
+              Tanyakan Produk
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Jika Produk Tidak Ditemukan -->
+      <div id="not-found" class="detail-card text-center mt-3" hidden>
+        <i class="bi bi-exclamation-circle fs-1 text-warning" aria-hidden="true"></i>
+
+        <h2 class="mt-3">Produk Belum Dipilih</h2>
+
+        <p class="text-muted">
+          Silakan kembali ke katalog AMCOZIP dan pilih produk yang ingin dilihat.
+        </p>
+
+        <a href="index.html#products" class="btn-back">
+          Kembali ke Katalog Produk
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="detail-footer">
+    <strong>PT Fajarindo Faliman Zipper (AMCOZIP)</strong>
+    <p class="small mb-0 mt-2">
+      Produsen Ritsleting dan Aksesori Garmen
+    </p>
+  </footer>
+
+  <!-- Data dan Fungsi Detail Produk -->
+  <script>
+    const products = {
+
+      "coil": {
+        name: "Coil Zipper",
+        category: "Ritsleting",
+        image: "assets/img/products/coil_preview.png",
+        description: "Coil Zipper adalah ritsleting yang menggunakan elemen gigi berbentuk spiral. Jenis ritsleting ini tercantum sebagai salah satu pilihan produk AMCOZIP.",
+        facts: [
+          "Ukuran pada katalog: 3, 5, 7, dan 8."
+        ]
+      },
+
+      "metal": {
+        name: "Metal Zipper",
+        category: "Ritsleting",
+        image: "assets/img/products/metal_preview.png",
+        description: "Metal Zipper adalah ritsleting dengan elemen gigi berbahan logam. Produk ini tersedia dalam beberapa pilihan ukuran pada katalog AMCOZIP.",
+        facts: [
+          "Ukuran pada katalog: 3, 3.5, 4.0, 4.2, 5, dan 8."
+        ]
+      },
+
+      "delrin": {
+        name: "Delrin Zipper",
+        category: "Ritsleting",
+        image: "assets/img/products/delrin_preview.png",
+        description: "Delrin Zipper merupakan jenis ritsleting plastik yang juga dikenal dengan istilah Vislon Plastic pada katalog produk.",
+        facts: [
+          "Ukuran pada katalog: 3, 5, dan 10."
+        ]
+      },
+
+      "waterproof": {
+        name: "Waterproof Zipper",
+        category: "Ritsleting",
+        image: "assets/img/products/waterproof_preview.png",
+        description: "Waterproof Zipper merupakan varian ritsleting yang ditujukan untuk kebutuhan produk yang memerlukan perlindungan terhadap air. Tingkat ketahanan air dan spesifikasi penggunaannya perlu dikonfirmasi kepada perusahaan.",
+        facts: [
+          "Ukuran pada katalog: 3 dan 5."
+        ]
+      },
+
+      "nonlock": {
+        name: "Non-Lock",
+        category: "Kepala Ritsleting",
+        image: "assets/img/products/nonlock_preview.png",
+        description: "Non-Lock merupakan salah satu variasi kepala ritsleting yang ditampilkan dalam katalog AMCOZIP.",
+        facts: [
+          "Ukuran pada katalog: 3, 5, 8, dan 10."
+        ]
+      },
+
+      "autolock": {
+        name: "Auto Lock",
+        category: "Kepala Ritsleting",
+        image: "assets/img/products/autolock_preview.png",
+        description: "Auto Lock merupakan variasi kepala ritsleting yang dilengkapi mekanisme pengunci. Produk ini tercantum dalam katalog AMCOZIP.",
+        facts: [
+          "Ukuran pada katalog: 3, 5, 7, dan 8.",
+          "Katalog B1 juga mencantumkan istilah Auto Lock dan Ring Lock."
+        ]
+      },
+
+      "semiauto": {
+        name: "Semi Auto Lock",
+        category: "Kepala Ritsleting",
+        image: "assets/img/products/semiauto_preview.png",
+        description: "Semi Auto Lock merupakan salah satu variasi kepala ritsleting yang ditampilkan dalam katalog AMCOZIP.",
+        facts: [
+          "Brass: ukuran 3 dan 4.",
+          "Die Cast: ukuran 3 dan 5."
+        ]
+      },
+
+      "reversible": {
+        name: "Reversible",
+        category: "Kepala Ritsleting",
+        image: "assets/img/products/reversible_preview.png",
+        description: "Reversible merupakan variasi kepala ritsleting yang dirancang untuk penggunaan dari dua arah atau sisi, sesuai jenis produk yang digunakan.",
+        facts: [
+          "Ukuran pada katalog: 5."
+        ]
+      },
+
+      "doublepuller": {
+        name: "Double Puller",
+        category: "Kepala Ritsleting",
+        image: "assets/img/products/doublepuller_preview.png",
+        description: "Double Puller merupakan variasi kepala ritsleting dengan dua bagian penarik. Produk ini ditampilkan dalam katalog AMCOZIP.",
+        facts: [
+          "Ukuran pada katalog: 5."
+        ]
+      },
+
+      "magic-nylon": {
+        name: "Magic Tape 100% Nylon",
+        category: "Perekat (Magic Tape)",
+        image: "assets/img/products/magictape_preview.png",
+        description: "Magic Tape 100% Nylon merupakan varian perekat yang menggunakan bahan Nylon.",
+        facts: [
+          "Bahan: 100% Nylon."
+        ]
+      },
+
+      "magic-polyester": {
+        name: "Magic Tape 100% Polyester",
+        category: "Perekat (Magic Tape)",
+        image: "assets/img/products/magictape_preview.png",
+        description: "Magic Tape 100% Polyester merupakan varian perekat yang menggunakan bahan Polyester.",
+        facts: [
+          "Bahan: 100% Polyester."
+        ]
+      },
+
+      "magic-mix": {
+        name: "Magic Tape Campuran Nylon dan Polyester",
+        category: "Perekat (Magic Tape)",
+        image: "assets/img/products/magictape_preview.png",
+        description: "Varian Magic Tape ini menggunakan campuran bahan Nylon dan Polyester sebagaimana tercantum dalam katalog B1.",
+        facts: [
+          "Bahan: campuran Nylon dan Polyester."
+        ]
+      },
+
+      "magic-size": {
+        name: "Pilihan Ukuran Magic Tape",
+        category: "Perekat (Magic Tape)",
+        image: "assets/img/products/magictape_preview.png",
+        description: "Katalog AMCOZIP menampilkan Magic Tape dalam beberapa pilihan lebar.",
+        facts: [
+          "Lebar pada katalog: 20 mm, 25 mm, 38 mm, 50 mm, dan 100 mm."
+        ]
+      },
+
+      "logo-emblem": {
+        name: "Logo Emblem",
+        category: "Aksesori",
+        image: "assets/img/products/logo_emblem.png",
+        description: "Logo Emblem merupakan salah satu produk aksesori yang ditampilkan dalam katalog AMCOZIP.",
+        facts: [
+          "Informasi desain dan spesifikasi dapat dikonsultasikan dengan tim penjualan."
+        ]
+      },
+
+      "custom-mould": {
+        name: "Custom Mould",
+        category: "Aksesori",
+        image: "assets/img/products/custom_mould.png",
+        description: "Custom Mould merupakan cetakan khusus yang dapat digunakan untuk kebutuhan desain aksesori sesuai permintaan.",
+        facts: [
+          "Desain dan spesifikasi perlu dikonsultasikan dengan tim penjualan."
+        ]
+      },
+
+      "pita-tas": {
+        name: "Pita Tas",
+        category: "Aksesori",
+        image: "assets/img/products/pita_tas.png",
+        description: "Pita Tas merupakan salah satu produk aksesori yang ditampilkan dalam katalog AMCOZIP.",
+        facts: [
+          "Informasi ukuran, bahan, dan pilihan produk dapat ditanyakan kepada tim penjualan."
+        ]
+      }
+
+    };
+
+    const productKey = new URLSearchParams(window.location.search).get("produk");
+    const product = products[productKey];
+
+    if (product) {
+
+      document.getElementById("product-content").hidden = false;
+
+      document.getElementById("product-name").textContent = product.name;
+      document.getElementById("product-category").textContent = product.category;
+      document.getElementById("product-description").textContent = product.description;
+
+      const image = document.getElementById("product-image");
+      image.src = product.image;
+      image.alt = "Gambar " + product.name + " AMCOZIP";
+
+      const factsList = document.getElementById("product-facts");
+
+      product.facts.forEach(function(fact) {
+        const item = document.createElement("li");
+        item.textContent = fact;
+        factsList.appendChild(item);
+      });
+
+      const message = "Halo AMCOZIP, saya ingin bertanya mengenai produk " + product.name + ".";
+
+      document.getElementById("whatsapp-link").href =
+        "https://wa.me/6282123733048?text=" + encodeURIComponent(message);
+
+      document.title = product.name + " | AMCOZIP";
+
+    } else {
+
+      document.getElementById("not-found").hidden = false;
+
+    }
+  </script>
+
+</body>
+</html>
