@@ -43,8 +43,23 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#history">Sejarah</a></li>
+          <li class="dropdown"><a href="#about"><span>Tentang Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#about">Profil Perusahaan</a></li>
+              <li><a href="#history">Sejarah Perusahaan</a></li>
+              <li><a href="#organization">Struktur Organisasi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#organization"><span>Struktur Organisasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#organization">Bagan Struktur Organisasi</a></li>
+              <li><a href="#tupoksi-direksi">Dewan Direksi</a></li>
+              <li><a href="#tupoksi-operasional">Divisi Operasional & Produksi</a></li>
+              <li><a href="#tupoksi-ppic-qc">Divisi PPIC, QC & QA</a></li>
+              <li><a href="#tupoksi-teknik-qa">Divisi Teknik & Cetakan</a></li>
+              <li><a href="#tupoksi-marketing-finance">Divisi Marketing & Keuangan</a></li>
+            </ul>
+          </li>
           <li><a href="#products">Produk Kami</a></li>
           <li><a href="#features">Keunggulan</a></li>
           <li><a href="#contact">Alamat & Lokasi</a></li>
@@ -301,6 +316,337 @@
       </div>
 
     </section><!-- /History Section -->
+
+    <!-- Organization Section (Struktur Organisasi) -->
+    <section id="organization" class="organization section py-5">
+
+      <div class="container section-title text-center mb-5" data-aos="fade-up">
+        <span class="brand-badge">Tata Kelola & Manajemen</span>
+        <h2 class="fw-bold">Struktur Organisasi Perusahaan</h2>
+        <p class="text-muted mx-auto" style="max-width: 750px;">Bagan hierarki kepemimpinan dan pembagian divisi kerja profesional di lingkungan <strong>PT Faliman Fajarindo Zipper (AMCOZIP)</strong> untuk menjamin efisiensi manufaktur, keunggulan mutu, dan layanan terpadu.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Chart Image Card -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-12">
+            <div class="org-chart-wrapper bg-white p-3 p-md-4 rounded-4 shadow-sm border position-relative">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-2 border-bottom gap-2">
+                <div>
+                  <h5 class="fw-bold text-dark mb-0"><i class="bi bi-diagram-3-fill text-primary me-2"></i>Bagan Struktur Organisasi Resmi</h5>
+                  <small class="text-muted">Klik pada gambar untuk memperbesar secara detail (High Definition)</small>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="assets/img/struktur-organisasi.png" class="glightbox btn btn-sm btn-primary rounded-pill px-3 py-1 d-inline-flex align-items-center gap-1" data-gallery="org-gallery" title="Bagan Struktur Organisasi PT Faliman Fajarindo Zipper">
+                    <i class="bi bi-arrows-fullscreen"></i> Perbesar Bagan
+                  </a>
+                  <a href="assets/img/struktur-organisasi.png" download="Bagan-Struktur-Organisasi-PT-Faliman-Fajarindo-Zipper.png" class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 d-inline-flex align-items-center gap-1">
+                    <i class="bi bi-download"></i> Unduh Bagan
+                  </a>
+                </div>
+              </div>
+
+              <div class="org-img-container text-center overflow-auto p-2 bg-light rounded-3">
+                <a href="assets/img/struktur-organisasi.png" class="glightbox" data-gallery="org-gallery" title="Bagan Struktur Organisasi PT Faliman Fajarindo Zipper">
+                  <img src="assets/img/struktur-organisasi.png" alt="Bagan Struktur Organisasi PT Faliman Fajarindo Zipper" class="img-fluid org-chart-img rounded shadow-xs">
+                </a>
+              </div>
+
+              <div class="mt-3 d-flex flex-wrap gap-2 justify-content-center text-center">
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="bi bi-person-badge-fill text-primary me-1"></i> 1 Direktur Utama</span>
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="bi bi-briefcase-fill text-info me-1"></i> 3 Direktur Divisi</span>
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="bi bi-gear-fill text-warning me-1"></i> 9+ Manager Spesialis</span>
+                <span class="badge bg-light text-dark border px-3 py-2"><i class="bi bi-diagram-2-fill text-success me-1"></i> 8+ Kepala Bagian Teknis & Lapangan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brief Explanation Box -->
+        <div class="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-lg-12">
+            <div class="p-4 p-md-5 rounded-4 shadow-sm border-start border-primary border-5 bg-white position-relative">
+              <div class="d-flex align-items-start gap-3">
+                <div class="p-3 bg-primary bg-opacity-10 rounded-circle text-primary fs-3 d-none d-sm-block flex-shrink-0">
+                  <i class="bi bi-info-circle-fill"></i>
+                </div>
+                <div>
+                  <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-1 rounded-pill text-uppercase mb-2">Penjelasan Struktur Organisasi</span>
+                  <h4 class="fw-bold text-dark mb-3">Struktur Organisasi PT Faliman Fajarindo Zipper</h4>
+                  <p class="text-secondary fs-6 mb-3" style="line-height: 1.8;">
+                    Bagan di atas merupakan <strong>Struktur Organisasi resmi dari PT Faliman Fajarindo Zipper</strong> (produsen ritsleting terkemuka bermerek <strong>AMCOZIP</strong>). Struktur ini dirancang secara sistematis untuk mencerminkan hierarki kepemimpinan, jalur koordinasi manajerial, serta tata kelola industri garmen yang modern, efisien, dan profesional.
+                  </p>
+                  <p class="text-secondary fs-6 mb-3" style="line-height: 1.8;">
+                    Tata kelola perusahaan dipimpin secara terpusat oleh seorang <strong>Direktur Utama</strong> selaku pemegang wewenang strategis tertinggi korporasi. Dalam menjalankan operasional manufaktur dan bisnis, kepemimpinan didelegasikan ke dalam tiga pilar direktorat utama:
+                  </p>
+                  <div class="row g-3 mt-1">
+                    <div class="col-md-4">
+                      <div class="p-3 rounded-3 bg-light border-0 border-top border-3 border-danger h-100">
+                        <h6 class="fw-bold text-dark mb-1"><i class="bi bi-megaphone-fill text-danger me-2"></i>Direktur Marketing</h6>
+                        <p class="small text-muted mb-0">Membawahi <strong>Manager Marketing</strong> untuk memperluas jangkauan pasar domestik dan ekspor ke 20+ negara serta mengelola hubungan kemitraan dengan industri garmen.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="p-3 rounded-3 bg-light border-0 border-top border-3 border-warning h-100">
+                        <h6 class="fw-bold text-dark mb-1"><i class="bi bi-gear-wide-connected text-warning me-2"></i>Direktur Operasional</h6>
+                        <p class="small text-muted mb-0">Mengendalikan seluruh jantung manufaktur pabrik seluas 12 Ha: Divisi Pembelian, Produksi I/II/III, PPIC & Logistik, Pengawasan Mutu (QC & QA), serta Rekayasa Cetakan & Desain.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="p-3 rounded-3 bg-light border-0 border-top border-3 border-success h-100">
+                        <h6 class="fw-bold text-dark mb-1"><i class="bi bi-cash-stack text-success me-2"></i>Direktur Keuangan</h6>
+                        <p class="small text-muted mb-0">Membawahi <strong>Manager Keuangan</strong> untuk menjamin akuntabilitas finansial, efisiensi modal produksi, kepatuhan audit perpajakan, dan likuiditas korporasi.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Role Descriptions (Tupoksi Tiap Divisi) -->
+        <div class="text-center mb-4" data-aos="fade-up">
+          <h4 class="fw-bold text-dark">Rincian Tugas Pokok & Fungsi (Tupoksi) Jabatan</h4>
+          <p class="text-muted small mx-auto" style="max-width: 650px;">Penjelasan lengkap wewenang dan tanggung jawab setiap tingkatan manajemen berdasarkan bagan organisasi PT Fajarindo Faliman Zipper.</p>
+        </div>
+
+        <!-- Role Groups -->
+        <div class="row g-4" data-aos="fade-up" data-aos-delay="200">
+
+          <!-- 1. Pimpinan & Dewan Direksi -->
+          <div class="col-lg-12" id="tupoksi-direksi">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+              <div class="card-header bg-primary text-white py-3 px-4 d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0"><i class="bi bi-award-fill me-2"></i>1. Dewan Direksi (Top Management)</h5>
+                <span class="badge bg-light text-primary fw-semibold">Tingkat Pimpinan Eksekutif</span>
+              </div>
+              <div class="card-body p-4 bg-white">
+                <div class="row g-4">
+                  <!-- Direktur Utama -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="h-100 p-3 rounded-3 border bg-light d-flex flex-column">
+                      <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-primary text-white rounded-circle p-2 me-2"><i class="bi bi-person-fill"></i></span>
+                        <h6 class="fw-bold mb-0 text-dark">Direktur Utama</h6>
+                      </div>
+                      <p class="small text-muted mb-0">Memegang otoritas tertinggi korporasi, memimpin penentuan arah strategis, visi-misi, ekspansi bisnis industri zipper, serta mengawasi sinergi kinerja lintas divisi (Marketing, Operasional, dan Keuangan).</p>
+                    </div>
+                  </div>
+                  <!-- Direktur Marketing -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="h-100 p-3 rounded-3 border bg-light d-flex flex-column">
+                      <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-danger text-white rounded-circle p-2 me-2"><i class="bi bi-megaphone-fill"></i></span>
+                        <h6 class="fw-bold mb-0 text-dark">Direktur Marketing</h6>
+                      </div>
+                      <p class="small text-muted mb-0">Merumuskan strategi penetrasi pasar zipper domestik dan pasar ekspor global ke 20+ negara, memperkuat jejaring dengan buyer garmen terkemuka, dan penetapan target penjualan perusahaan.</p>
+                    </div>
+                  </div>
+                  <!-- Direktur Operasional -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="h-100 p-3 rounded-3 border bg-light d-flex flex-column">
+                      <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-warning text-white rounded-circle p-2 me-2"><i class="bi bi-gear-wide-connected"></i></span>
+                        <h6 class="fw-bold mb-0 text-dark">Direktur Operasional</h6>
+                      </div>
+                      <p class="small text-muted mb-0">Memimpin seluruh aktivitas manufaktur di area pabrik Daan Mogot 12 Ha, mengintegrasikan pengadaan bahan baku, efisiensi lini produksi masal, utilitas mesin, hingga sistem kendali mutu.</p>
+                    </div>
+                  </div>
+                  <!-- Direktur Keuangan -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="h-100 p-3 rounded-3 border bg-light d-flex flex-column">
+                      <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-success text-white rounded-circle p-2 me-2"><i class="bi bi-cash-stack"></i></span>
+                        <h6 class="fw-bold mb-0 text-dark">Direktur Keuangan</h6>
+                      </div>
+                      <p class="small text-muted mb-0">Bertanggung jawab atas pengelolaan likuiditas keuangan, arus kas (<em>cash flow</em>), anggaran belanja modal mesin & pabrik, perpajakan, serta kepatuhan laporan keuangan audit independen.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Divisi Operasional & Manufaktur -->
+          <div class="col-lg-12" id="tupoksi-operasional">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+              <div class="card-header bg-dark text-white py-3 px-4 d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0"><i class="bi bi-tools me-2"></i>2. Divisi Operasional, Pengadaan & Produksi</h5>
+                <span class="badge bg-warning text-dark fw-semibold">Di Bawah Direktur Operasional</span>
+              </div>
+              <div class="card-body p-4 bg-white">
+                <div class="row g-4">
+                  <!-- Manager Pembelian -->
+                  <div class="col-lg-6">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="fw-bold text-primary mb-0"><i class="bi bi-cart-check-fill me-2"></i>Manager Pembelian</h6>
+                        <span class="badge bg-secondary-subtle text-secondary border">Pengadaan Pabrik</span>
+                      </div>
+                      <p class="small text-muted mb-2">Mengelola strategi pengadaan bahan baku utama dan penunjang, negosiasi harga vendor, evaluasi kualitas bahan, serta memastikan ketepatan jadwal pasokan ke pabrik.</p>
+                      <div class="p-2 bg-white rounded-2 border small">
+                        <strong>Membawahi:</strong>
+                        <ul class="mb-0 ps-3 mt-1 text-muted">
+                          <li><strong>Kabag Pembelian I, II, & III:</strong> Mengoordinasikan pengadaan terfokus untuk kategori bahan tekstil (benang/kain), bahan baku logam & komponen slider, serta suku cadang mesin dan bahan kimia pewarnaan.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Manager Produksi I, II, & III -->
+                  <div class="col-lg-6">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="fw-bold text-primary mb-0"><i class="bi bi-buildings-fill me-2"></i>Manager Produksi I, II, & III</h6>
+                        <span class="badge bg-secondary-subtle text-secondary border">Lini Manufaktur</span>
+                      </div>
+                      <p class="small text-muted mb-2">Mengawasi dan mengendalikan jalannya proses produksi ritsleting dari hulu ke hilir agar sesuai target kapasitas, standar efisiensi, dan spesifikasi pesanan.</p>
+                      <div class="p-2 bg-white rounded-2 border small">
+                        <strong>Ruang Lingkup Lini Produksi:</strong>
+                        <ul class="mb-0 ps-3 mt-1 text-muted">
+                          <li><strong>Produksi I:</strong> Divisi pertenunan & rajut pita (<em>weaving/knitting</em>) dan pencelupan warna kain (<em>dyeing</em> DTM).</li>
+                          <li><strong>Produksi II:</strong> Divisi pencetakan & pembentukan gigi zipper (Coil spiral, Metal cast, dan Delrin plastik).</li>
+                          <li><strong>Produksi III:</strong> Divisi perakitan (<em>assembly</em>), pemotongan presisi (<em>cutting</em>), pemasangan stop, dan pengemasan.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Divisi PPIC, Logistik, QC & QA -->
+          <div class="col-lg-12" id="tupoksi-ppic-qc">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+              <div class="card-header bg-info text-white py-3 px-4 d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0"><i class="bi bi-shield-check me-2"></i>3. Divisi Perencanaan (PPIC), Logistik & Kontrol Kualitas (QC/QA)</h5>
+                <span class="badge bg-light text-info fw-semibold">Jaminan Kelancaran & Mutu</span>
+              </div>
+              <div class="card-body p-4 bg-white">
+                <div class="row g-4">
+                  <!-- Manager PPIC -->
+                  <div class="col-lg-6">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="fw-bold text-primary mb-0"><i class="bi bi-calendar-check-fill me-2"></i>Manager PPIC</h6>
+                        <span class="badge bg-secondary-subtle text-secondary border">Perencanaan & Stok</span>
+                      </div>
+                      <p class="small text-muted mb-2">Menyusun rencana kerja produksi (<em>production schedule</em>) berdasar order masuk, mengendalikan perputaran persediaan (<em>inventory control</em>), dan mencegah kendala produksi.</p>
+                      <div class="p-2 bg-white rounded-2 border small">
+                        <strong>Membawahi:</strong>
+                        <ul class="mb-0 ps-3 mt-1 text-muted">
+                          <li><strong>Kabag Logistik Kain:</strong> Mengelola gudang penerimaan, penyimpanan gulungan pita mentah maupun yang telah diwarnai, serta penyalurannya ke mesin perakitan.</li>
+                          <li><strong>Kabag Logistik Slider:</strong> Mengatur pergudangan dan pasokan kepala ritsleting, puller, pin, box, dan komponen perakitan zipper.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Manager QC & QA -->
+                  <div class="col-lg-6">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="fw-bold text-primary mb-0"><i class="bi bi-check2-all me-2"></i>Manager QC & Manager QA</h6>
+                        <span class="badge bg-secondary-subtle text-secondary border">Inspeksi & Sertifikasi Mutu</span>
+                      </div>
+                      <p class="small text-muted mb-2">Menjalankan pengawasan mutu komprehensif: inspeksi langsung di lini operasional harian (QC) dan penetapan sistem jaminan standar kualitas jangka panjang (QA).</p>
+                      <div class="p-2 bg-white rounded-2 border small">
+                        <strong>Membawahi:</strong>
+                        <ul class="mb-0 ps-3 mt-1 text-muted">
+                          <li><strong>Manager QC & Kabag Logistik/QC Kain & Slider:</strong> Menguji kekuatan tarik gigi, ketahanan siklus buka-tutup, dan ketahanan luntur warna pencucian sebelum lolos dari gudang.</li>
+                          <li><strong>Manager QA & Kabag QA:</strong> Mengawal kepatuhan SOP ISO, sertifikasi keselamatan produk ekspor (OEKO-TEX / RoHS), dan pelaksanaan audit kualitas berkala.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Divisi Rekayasa Teknik, Cetakan & Sistem IT -->
+          <div class="col-lg-12" id="tupoksi-teknik-qa">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+              <div class="card-header bg-secondary text-white py-3 px-4 d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0"><i class="bi bi-cpu-fill me-2"></i>4. Divisi Rekayasa Teknik, Cetakan, Desain & Sistem IT</h5>
+                <span class="badge bg-light text-dark fw-semibold">Unit Penunjang Teknis Terintegrasi</span>
+              </div>
+              <div class="card-body p-4 bg-white">
+                <div class="row g-4">
+                  <!-- Kabag GBR & Kabag EDP -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <h6 class="fw-bold text-dark mb-2"><i class="bi bi-bezier2 text-primary me-2"></i>Kabag GBR & Kabag EDP</h6>
+                      <p class="small text-muted mb-0"><strong>Kabag GBR:</strong> Menyusun gambar teknik kerja, spesifikasi detail komponen, dan gambar toleransi cetakan.<br><br><strong>Kabag EDP (IT):</strong> Mengelola infrastruktur komputer pabrik, jaringan LAN/WAN, integrasi basis data produksi, dan otomatisasi administrasi.</p>
+                    </div>
+                  </div>
+                  <!-- Manager Teknik Produksi -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <h6 class="fw-bold text-dark mb-2"><i class="bi bi-wrench-adjustable text-warning me-2"></i>Manager Teknik Produksi</h6>
+                      <p class="small text-muted mb-0">Menjaga kelaikan dan keandalan seluruh mesin otomatis, sistem kelistrikan, uap boiler, kompresor udara, serta memimpin program pemeliharaan preventif (<em>preventive maintenance</em>).</p>
+                    </div>
+                  </div>
+                  <!-- Manager Gambar dan Desain -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <h6 class="fw-bold text-dark mb-2"><i class="bi bi-pencil-square text-success me-2"></i>Manager Gambar & Desain</h6>
+                      <p class="small text-muted mb-0">Mengembangkan inovasi bentuk kepala tarikan zipper (<em>fashion pullers</em>), riset ergonomi tarikan ritsleting, dan visualisasi 3D kustom sesuai permintaan brand garmen pemesan.</p>
+                    </div>
+                  </div>
+                  <!-- Manager Pembuatan Cetakan -->
+                  <div class="col-md-6 col-lg-3">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <h6 class="fw-bold text-dark mb-2"><i class="bi bi-box-seam-fill text-danger me-2"></i>Manager Pembuatan Cetakan</h6>
+                      <p class="small text-muted mb-0">Membuat dan merawat cetakan presisi tinggi (<em>mould & dies</em>) untuk proses <em>die-casting zinc alloy</em> dan injeksi plastik <em>polyacetal</em>, termasuk cetakan logo kustom brand pelanggan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Divisi Marketing & Keuangan -->
+          <div class="col-lg-12" id="tupoksi-marketing-finance">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+              <div class="card-header bg-success text-white py-3 px-4 d-flex align-items-center justify-content-between">
+                <h5 class="fw-bold mb-0"><i class="bi bi-graph-up-arrow me-2"></i>5. Divisi Pemasaran & Keuangan Perusahaan</h5>
+                <span class="badge bg-light text-success fw-semibold">Pilar Bisnis & Finansial</span>
+              </div>
+              <div class="card-body p-4 bg-white">
+                <div class="row g-4">
+                  <!-- Manager Marketing -->
+                  <div class="col-md-6">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="fw-bold text-primary mb-0"><i class="bi bi-briefcase-fill me-2"></i>Manager Marketing</h6>
+                        <span class="badge bg-secondary-subtle text-secondary border">Di Bawah Direktur Marketing</span>
+                      </div>
+                      <p class="small text-muted mb-0">Memimpin tim tenaga penjualan (<em>sales team</em>), menangani permintaan sampel dari calon mitra garmen, negosiasi harga kontrak <em>bulk order</em>, koordinasi pengiriman ekspor kontainer, dan evaluasi kepuasan pembeli.</p>
+                    </div>
+                  </div>
+                  <!-- Manager Keuangan -->
+                  <div class="col-md-6">
+                    <div class="p-3 border rounded-3 bg-light h-100">
+                      <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h6 class="fw-bold text-primary mb-0"><i class="bi bi-cash-coin me-2"></i>Manager Keuangan</h6>
+                        <span class="badge bg-secondary-subtle text-secondary border">Di Bawah Direktur Keuangan</span>
+                      </div>
+                      <p class="small text-muted mb-0">Mengelola kegiatan akuntansi harian, verifikasi tagihan bahan baku (<em>accounts payable</em>), pemantauan penagihan piutang pelanggan (<em>accounts receivable</em>), penggajian karyawan pabrik (<em>payroll</em>), dan rekonsiliasi perbankan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Organization Section -->
 
     <!-- Products Section (Katalog Produk Sesuai Gambar Resmi) -->
     <section id="products" class="products section light-background py-5">
@@ -826,6 +1172,7 @@
             <li class="mb-2"><a href="#hero" class="text-decoration-none text-secondary">Beranda</a></li>
             <li class="mb-2"><a href="#about" class="text-decoration-none text-secondary">Tentang Kami</a></li>
             <li class="mb-2"><a href="#history" class="text-decoration-none text-secondary">Sejarah Perusahaan</a></li>
+            <li class="mb-2"><a href="#organization" class="text-decoration-none text-secondary">Struktur Organisasi</a></li>
             <li class="mb-2"><a href="#products" class="text-decoration-none text-secondary">Katalog Produk</a></li>
             <li class="mb-2"><a href="#features" class="text-decoration-none text-secondary">Keunggulan Mutu</a></li>
             <li class="mb-2"><a href="#contact" class="text-decoration-none text-secondary">Peta & Kontak</a></li>

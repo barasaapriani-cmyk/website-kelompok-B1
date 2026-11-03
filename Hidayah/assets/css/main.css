@@ -2067,3 +2067,40 @@ section,
   color: #ffffff;
   transform: translateY(-3px) scale(1.05);
 }
+
+/* Organization Section & Bagan Styles */
+.org-chart-wrapper {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border-color: #e5e7eb !important;
+}
+
+.org-img-container {
+  border: 1px solid #e2e8f0;
+  min-height: 220px;
+  background-color: #fbfcfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.org-chart-img {
+  max-height: 480px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.org-chart-img:hover {
+  transform: scale(1.02);
+}
+
+.organization .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.organization .card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07) !important;
+}
